@@ -22,8 +22,8 @@ app.get("/funfacts", (req, res) => {
     res.render("../views/html/my_fun_facts");
 });
 
-app.get("/blog", (req, res) => {
-    res.render("../views/html/blog");
+app.get("/trivia", (req, res) => {
+    res.render("../views/html/trivia");
 });
 
 
