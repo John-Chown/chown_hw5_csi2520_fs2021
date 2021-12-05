@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="/public/css/hw3_stylesheet.css">
-    <script src="/js/trivia.js" defer></script>
+    <script src="/index.js" defer></script>
 </head>
 <body>
     <header> 
@@ -22,14 +22,37 @@
         <a href="/html/blog.html"> Blog</a>
     </nav>
 
+
     <div id="title">
+        <h4>Question 1: What state has the capital of Juneau</h4>
         <ul>
-            <li class="alternative">Alaska</li>
-            <li class="alternative">Alaska</li>
-            <li class="alternative">Alaska</li>
-            <li class="alternative">Alaska</li>
+            <li class="alternative" id="q1o1">Alaska</li>
+            <li class="alternative" id="q1o2">Michigan</li>
+            <li class="alternative" id="q1o3">North Dakota</li>
+            <li class="alternative" id="q1o4">Maine</li>
         </ul>
+        <form action="/trivia" method="POST">
+           <input type="text" name="answer1" placeholder="answer1"> 
+           <input type="text" name="answer2" placeholder="answer2"> 
+            </form>
+
+
+            <h4>Question 2: What state has the capital of Des Moines</h4>
+        <ul>
+            <li class="alternative" id="q2o1">Washington</li>
+            <li class="alternative" id="q2o2">Nebraska</li>
+            <li class="alternative" id="q2o3">Idaho</li>
+            <li class="alternative" id="q2o4">Iowa</li>
+        </ul>
+
+    
+  
     </div>
    
+    <div>
+        
+    </div>
+    
+
 </body>
 </html>
