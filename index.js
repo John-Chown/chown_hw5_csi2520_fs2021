@@ -62,7 +62,7 @@ app.post("", (req,res) => {
         }
 
         console.log(score);
-       alert(`You got a score of ${score}/10!`);
+       alert(`You got a score of ${score}/6!`);
 })
 
 
