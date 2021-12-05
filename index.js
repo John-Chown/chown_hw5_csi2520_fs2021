@@ -2,6 +2,7 @@ const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require('body-parser');
 const alert = require("alert");
+const webpush = require('web-push');
 
 
 const app = express();
@@ -62,7 +63,19 @@ app.post("", (req,res) => {
         }
 
         console.log(score);
-       alert(`You got a score of ${score}/6!`);
+        res.write('<!DOCTYPE html>'+
+        '<html>'+
+        '    <head>'+
+        '        <meta charset="utf-8" />'+
+        '        <title>Score</title>'+
+        '    </head>'+ 
+        '    <body>'+
+        '       <p id = "score">'+
+              'You got a ' + score +
+              '</p>'+
+        '    </body>'+            
+        '</html>');
+       
 })
 
 
