@@ -34,26 +34,26 @@ app.post('/trivia', (req, res) => {
     var score1 = 0;
     var score2 = 0;
     
-    console.log(req.body.answer1 + req.body.answer2);
     
-        // if (req.body.answer1 == "a"){
+    
+        if (req.body.answer1 == "a"){
             
-        //     score1+= 1;
+            score1+= 1;
            
             
             
-        // }
+        }
         
-        //  if (req.body.answer2 == "d"){
+         if (req.body.answer2 == "d"){
             
-        //     score2+= 1;
+            score2+= 1;
             
             
-        // }
+        }
         
-    // sum = (score1 + score2)
+    sum = (score1 + score2)
 
-    // console.log(sum);
+    console.log(sum);
    
     
 })
