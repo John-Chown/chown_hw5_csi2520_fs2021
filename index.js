@@ -71,7 +71,7 @@ app.post("", (req,res) => {
         '    </head>'+ 
         '    <body>'+
         '       <p id = "score">'+
-              'You got a ' + score +
+              'You got a ' + score + ' out of 6!' +
               '</p>'+
         '    </body>'+            
         '</html>');
