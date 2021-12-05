@@ -1,6 +1,8 @@
 const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require('body-parser');
+const alert = require("alert");
+
 
 const app = express();
 
@@ -29,33 +31,38 @@ app.get("/trivia", (req, res) => {
     res.render("../views/html/trivia");
 });
 
-app.post('/trivia', (req, res) => {
 
-    var score1 = 0;
-    var score2 = 0;
-    
-    
-    
-        if (req.body.answer1 == "a"){
-            
-            score1+= 1;
-           
-            
-            
-        }
-        
-         if (req.body.answer2 == "d"){
-            
-            score2+= 1;
-            
-            
-        }
-        
-    sum = (score1 + score2)
 
-    console.log(sum);
+
+app.post("", (req,res) => {
+    var score = 0;
    
-    
+        if (req.body.answer1 == "a"){            
+            score ++;
+        }
+
+        if (req.body.answer2 == "d"){
+            score ++;
+        }
+
+        if (req.body.answer3 == "c"){ 
+            score ++;
+        }
+
+        if (req.body.answer4 == "c"){ 
+            score ++;
+        }
+
+        if (req.body.answer5 == "b"){ 
+            score ++;
+        }
+
+        if (req.body.answer6 == "d"){ 
+            score ++;
+        }
+
+        console.log(score);
+       alert(`You got a score of ${score}/10!`);
 })
 
 

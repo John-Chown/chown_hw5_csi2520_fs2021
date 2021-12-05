@@ -251,3 +251,30 @@ button{
     color: white;
     background-color: black;
 }
+
+h4{
+    text-align: center;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    font-size: larger;
+    font-family: futura;
+}
+
+.alternative{
+    text-align: center;
+    font-family: futura;
+}
+
+ol{
+    text-align: center;
+}
+
+input{
+    margin-left: 47%;
+    margin-right: 47%;
+}
+
+.subBtn{
+    margin-left: 50%;
+    margin-right: 50%;
+}
